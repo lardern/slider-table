@@ -6,13 +6,23 @@
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="jquery.slidertable.js"></script>
     <link rel="stylesheet" href="jquery-slidertable.css"/>
+    <style>
+        .eve{
+            background-color: cadetblue;
+        }
+        .odd{
+            background-color: cornflowerblue;
+        }
+    </style>
 </head>
 <body>
 
 <div id="table" style="width:100%;height:150px;"></div>
 <script>
     $(function () {
-        $('#table').slidertable({});
+        $('#table').slidertable({
+            showHead:true
+        });
     });
 </script>
 </body>
